@@ -1,0 +1,18 @@
+{
+    "name": "tu_puedes/tu_puedes",
+    "type": "project",
+    "description": "Tu Puedes",
+    "keywords": ["school", "kids"],
+    "require": {
+        "symfony/dotenv": "^7.1",
+        "mpdf/mpdf": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Php\\": "php/",
+            "App\\": "",
+            "View\\": "view/",
+            "Api\\": "api/"
+        }
+    }
+}

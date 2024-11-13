@@ -1,0 +1,46 @@
+
+header{
+    z-index: 999;
+}
+.position-fixed{
+    background-color: white;
+    height: 5rem;
+}
+
+header nav{
+    align-self: center;
+   
+}
+
+header nav > a{
+    margin: 0 1rem;
+    color: grey;
+    font-weight: 500;
+}
+
+ 
+.title img{
+    width: 100%;
+    height: auto;
+    width: 12%;
+    margin-bottom: 0.7rem;
+    margin-left: 0.4rem;
+}
+
+.logo figure img{
+    max-width: 100px;
+}
+
+header{
+    height:  78.8px  ;
+    background: #ff7d3f;
+    width: 100%;
+   
+}
+
+.d-flex_rapido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}

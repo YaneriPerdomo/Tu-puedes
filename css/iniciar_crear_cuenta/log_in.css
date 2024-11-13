@@ -1,0 +1,324 @@
+/*Cabezera*/
+.btn-start {
+  background: #ffba99;
+  border: 0rem;
+  padding: 0.5rem 3rem;
+  color: rgb(47, 47, 47);
+}
+header {
+  z-index: 999;
+}
+.position-fixed {
+  background-color: white;
+  height: 5rem;
+}
+
+header nav {
+  align-self: center;
+}
+
+header nav > a {
+  margin: 0 1rem;
+  color: grey;
+  font-weight: 500;
+}
+
+.title img {
+  width: 100%;
+  height: auto;
+  width: 12%;
+  margin-bottom: 0.7rem;
+  margin-left: 0.4rem;
+}
+
+/*index - Iniciar Sesiòn*/
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../font/CenturyGothic.woff") format("woff");
+  font-display: swap;
+}
+
+html,
+* {
+  font-family: "Century Gothic";
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+main > div {
+  background: linear-gradient(360deg, #fc7c45 50%, #ffeee6 50%);
+}
+
+main > div {
+  width: 50%;
+}
+
+.container__user {
+  background: #fffbf9;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container__img > div {
+  height: 50vh;
+
+  width: 14rem;
+}
+
+.container__img > div:nth-child(2) {
+  height: 60vh;
+}
+.container__img > div > img {
+  max-width: 30rem;
+  min-width: 10rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  filter: drop-shadow(0.5rem 0.6rem white);
+}
+
+.container__img > div:nth-child(2) > span {
+  color: rgb(19, 19, 19);
+  margin-bottom: 0.5rem;
+  display: block;
+  font-family: "Century Gothic";
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.container__img > div:nth-child(2) > span > b {
+  color: #fc7c45;
+  font-family: "Century Gothic";
+  font-weight: 600;
+}
+
+.container__user {
+  padding: 0.5rem;
+  display: flex;
+  justify-items: center;
+}
+.container__user-form {
+  max-width: 55rem;
+  min-width: 200px;
+  align-self: center;
+}
+
+/*container_form*/
+
+.container__user-form h1 {
+  background-color: #fc7c45;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.container__user-form {
+  padding: 0.6rem;
+}
+
+.form__btn {
+  text-align: center;
+}
+
+.form__btn--detalle {
+  background: white;
+  border: 0rem;
+  color: white;
+  padding: 0.5rem 0.6rem;
+  border: solid 2px #fc7c45;
+  border-radius: 1rem 1rem;
+  color: #fc7c45;
+  font-weight: bold;
+  text-align: center;
+  display: inline;
+}
+
+.form__btn {
+  text-align: center;
+  display: block;
+}
+
+.warning_not_vali {
+  color: rgb(162, 27, 27);
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.red_vali {
+  border-bottom: solid 0.1px red !important;
+}
+
+label {
+  padding: 0.3rem;
+  text-align: left;
+  font-weight: border;
+}
+
+input {
+  border: 0.1px solid rgb(132, 132, 132);
+  padding: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+@media screen and (max-width: 1350px) {
+  .container__img div:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container__img {
+    display: none;
+  }
+
+  main > div {
+    width: 100%;
+  }
+
+  .container__user {
+    background: linear-gradient(360deg, #fc7c45 50%, #ffeee6 50%);
+  }
+
+  .container__user-form {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.3rem #1c1c1c double;
+  }
+  .container__user-form > h1 {
+    border-radius: 0rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container__img {
+    display: none;
+  }
+  input {
+    width: 100vw;
+  }
+  main > div {
+    width: 100%;
+  }
+
+  .container__user {
+    background: none;
+  }
+
+  .container__user-form {
+    background-color: none;
+    padding: none;
+    border-radius: none;
+    border: none;
+  }
+  .container__user-form > h1 {
+    border-radius: none;
+  }
+}
+
+/*crear una cuenta nueva*/
+.container__new {
+  background: #fffbf9;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.form__flex {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  justify-content: center;
+  flex-grow: 2;
+}
+
+.form__flex div input,
+.form__flex div select {
+  width: 18rem;
+  border: 0.1px solid rgb(132, 132, 132);
+  margin-bottom: 0.6rem;
+  height: 2.2rem;
+}
+
+.container__main--detalle {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 700px;
+  min-width: 200px;
+  align-self: center;
+  border: 0.3rem #1c1c1c double;
+}
+
+.titleOrange {
+  color: #fc7c45;
+  margin-top: 0.4rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.container__new--title {
+  background-color: #fc7c45;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  margin-bottom: 0.9rem;
+}
+
+.container__main {
+  background: linear-gradient(360deg, #fc7c45 50%, #ffeee6 50%);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.container__new--title {
+  background-color: #fc7c45;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+main > div {
+  background: linear-gradient(360deg, #fc7c45 50%, #ffeee6 50%);
+}
+
+body {
+  display: flex;
+}
+main {
+  flex-grow: 1;
+}
+/*efecto para los inputs*/
+
+.noValidation {
+  transition: border 0.2s linear;
+  border: solid 0.1px #d55252 !important;
+}
+
+#warning_inicio {
+  color: #d55252 !important;
+}

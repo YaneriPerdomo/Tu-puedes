@@ -1,0 +1,490 @@
+ 
+body::-webkit-scrollbar{
+    width: 3px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: grey;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 140, 0);
+   
+}
+
+
+
+header{
+    z-index: 999;
+}
+.position-fixed{
+    background-color: white;
+    height: 5rem;
+}
+
+header nav{
+    align-self: center;
+   
+}
+
+header nav > a{
+    margin: 0 1rem;
+    color: grey;
+    font-weight: 500;
+}
+
+ 
+.title img{
+    width: 100%;
+    height: auto;
+    width: 12%;
+    margin-bottom: 0.7rem;
+    margin-left: 0.4rem;
+}
+
+/*Main*/
+
+main .container-fluid > img{
+    height: 100vh;
+   filter:sepia(2rem);
+}
+ 
+.detalls{
+    width: 100%;
+    height: 100%;
+   background-color:rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+   
+    position:absolute;
+    background-position:  center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalls h1{
+    color: yellow;
+}
+
+.detalls p{
+    color: white;
+    font-weight: 300;
+    
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+    object-position: center center;
+    object-fit: cover;
+}
+.position-relative{
+    
+    position: absolute;
+
+}
+
+a{
+    transition: border-bottom 1s linear ;
+    padding-bottom: 0.6rem;
+    
+}
+
+
+.parte-uno img{
+    width: 10%;
+    height: 10%;
+}
+
+.parte-uno{
+    width:  40%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.what h2{
+    font-weight: 300;
+}
+
+
+.border-s{
+    border-radius: 0rem 2rem 2rem 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: yellow;
+    
+    right: 0;
+    top: 0;
+}
+
+
+.col i{
+ outline-offset: 2rem;
+ outline-color: yellow;
+ outline-style: 2rem;
+ outline-width: 2rem;
+ filter: drop-shadow(2px 1px yellow);
+}
+
+
+ 
+@media (max-width: 576px) {
+
+    
+    
+    
+    .tex{
+       text-align: center;
+    }
+    .aa{
+        display: none !important;
+    }
+    
+    header div{ 
+        text-align: center;
+    }
+
+    .row{
+        gap: 1rem !important;
+    } 
+
+    .yp{
+        width: 90% !important;
+    }
+
+    .bus{
+        width: 100% !important;
+    }
+}
+
+
+
+.d-done{
+    width: 5%;
+    height: 5%;
+}
+
+@media screen and (min-width: 0px)
+and (max-width: 1224px)
+{
+      .peludo{
+        width: 85% !important;
+    }
+
+}
+
+.peludo{
+    width: 50% ;
+}
+
+@media (min-width: 768px) { 
+  
+   
+    header{
+        margin: 0 auto;
+        width: 60%;
+        height: auto;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+ 
+    .y{
+        width: 80% !important;
+    }
+
+    .g{
+        width: 100% !important;
+    }
+ 
+    .h{
+        width: 90% !important;
+    }
+
+  
+ .Promo{
+        width: 80% !important;
+    }
+ }
+ .wifi{
+    margin-top: 2rem;
+ }
+ .peludo{
+    width: 95% ;
+}
+
+.peludo{
+    width: 50%;
+}
+
+@media (min-width: 992px) { 
+    .col1{
+        text-align: right;
+    }
+    
+    
+
+    .wifi{
+        margin-top: 0rem;
+     }
+    
+    
+    .locura{
+        gap: 0.7rem !important;
+    }
+
+    .col2{
+        text-align: left;
+    }
+   
+ 
+    @keyframes ani {
+        from{
+          transform: perspective(10rem) translateZ(0.0rem);
+       
+        } 
+        to{
+           transform: perspective(10rem) translateZ(0.3rem);
+       
+        }  
+       }
+         
+      .hr{
+          background-color:   rgb(255, 204, 0);
+          
+      
+      }
+      .Promo{
+        width: 50% !important;
+    }
+ }
+ 
+ 
+@media (min-width: 1200px) {  
+    .h{
+        width: 50vw !important;
+    }
+
+  
+}
+
+
+ 
+@media (min-width: 1400px) { 
+
+    .y{
+        width: 50% !important;
+    }
+ }
+ 
+ footer .d-flex{
+   margin: 0 auto;
+   width: 50%;
+   justify-content: space-between;
+ }
+
+
+ 
+  
+ .y{
+    color: rgb(76, 75, 75);
+ }
+.communtion > div{
+    padding: 1rem 2rem; 
+    
+    border-bottom: 0.2rem solid rgb(189, 189, 189) ;
+    border-radius: 0rem 0rem 0.2rem 0rem;
+    color: rgb(82, 82, 82);
+    transition: background-color 304ms linear, border-radius 304ms linear, border-bottom 304ms linear;
+}
+
+.communtion > div:hover{
+    background-color: rgb(217, 184, 38);
+    color: white;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    border-bottom:0.2rem solid   rgb(188, 159, 28);
+}
+
+.d-flex > a{
+    text-decoration: none !important;
+    border: solid grey 1px !important;
+    align-items: center;
+    color: grey;
+}
+
+
+.pagin{
+  
+    width: 100% !important;
+   }
+
+.pagin div{
+    padding: 0rem 0rem;
+}
+
+.row{
+    padding: 0%;
+    margin: 0%;
+} 
+
+ul li{
+    list-style: none;
+    padding: 0.5rem 0rem;
+}
+
+.panel-header{
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+
+.yellow{
+   
+    background-color: rgb(255, 204, 0) !important;
+}
+
+
+.black-g{
+    background-color: rgb(38, 38, 35);
+    transition: border 2s linear !important;
+    border: none;
+}
+
+.black-g:hover{
+    border: solid 3px rgb(255, 204, 0) !important;
+
+}
+
+[type="button"]{
+    background-image: rgb(38, 38, 35);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+.amarillo{
+    border: solid 3px rgb(255, 204, 0);
+    padding: 0rem 0rem;
+    box-shadow: 3px 2px 7px grey;
+    animation:  
+    ani 5s ease 250ms 1 alternate both running;
+   
+    background-color: white;
+   filter: blur(0rem);
+
+}
+ 
+
+.bg-warning {
+    --bs-bg-opacity: 1;
+    background-color: rgb(255, 204, 0) !important;
+  }
+
+.border-negro{
+    border: solid 3px rgb(38, 38, 35);
+    padding: 0rem 0rem;
+}
+
+.detail {
+    font-weight: 300;
+    
+
+}
+
+.detail i{ 
+    
+    padding: 1.4rem;
+    border-radius: 0rem 3rem 3rem 3rem;
+    background-color: rgb(255, 204, 0);
+}
+
+.col-12 > input{
+    border: solid 1px grey;
+    height: 2.4rem;
+}
+
+ 
+textarea{
+    border: solid 1px grey;
+}
+.yp{
+    margin: auto;
+    width: 50%;
+}
+
+/*Mapa*/
+
+#mapa{
+    background-color: rgba(255, 218, 70,0.2);
+    padding: 2rem 0rem;
+}
+
+iframe{
+    width: 50%;
+    height: 20vw;
+    border-radius: 2rem;
+}
+
+.i-blog{
+    width: 10rem;
+    height: auto;
+}
+
+.clear{
+    clear: left;
+}
+
+.clear div > a{
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.blog-container{
+    width: 60%;
+}
+
+.bi-heart-fill{
+    transition: filter 3s linear;
+}
+
+.bi-heart-fill:hover{
+ outline: -4 solid yellow;
+    filter: drop-shadow(2px 3px yellow)
+}
+
+.blog-title h6{
+    transition: color 2s linear !important;
+}
+
+.blog-title h6:hover {
+    cursor: pointer;
+    color: rgb(255, 204, 0) !important;
+}
+
+.blog-title a{
+    color: rgb(255, 204, 0);
+}
+
+@media screen and (max-width: 760px) {
+    .h5-inte{
+    width: 85% !important ;
+    font-size: 1.1rem !important;
+}
+
+
+}
+
+@media screen and (max-width: 320px) {
+    .h5-inte{
+    width: 85% !important ;
+    font-size: 0.8rem !important;
+    }
+    .communtion div {
+    text-align: center;
+    }}

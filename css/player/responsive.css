@@ -1,0 +1,17 @@
+@media screen and (min-width:992px) {
+    .responsive {
+        display: none;
+    }
+
+   
+}
+
+@media screen and (max-width:992px) {
+    .containerHome{
+        display: none;
+    }
+    [class="col-6 text-center"]{
+        display: none;
+    }
+
+}

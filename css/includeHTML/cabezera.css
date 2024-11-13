@@ -1,0 +1,117 @@
+header {
+  background-color: rgb(255, 255, 255);
+}
+
+.ha {
+  width: 100%;
+}
+
+.h {
+
+
+  width: 5rem;
+  padding: 0;
+
+  background-image: none !important;
+}
+
+:root {
+  --step--2: clamp(0.91rem, 0.89rem + 0.1vw, 0.96rem);
+  --step--1: clamp(1.09rem, 1.05rem + 0.21vw, 1.2rem);
+  --step-0: clamp(1.31rem, 1.24rem + 0.37vw, 1.5rem);
+  --step-1: clamp(1.58rem, 1.46rem + 0.59vw, 1.88rem);
+  --step-2: clamp(1.89rem, 1.71rem + 0.89vw, 2.34rem);
+  --step-3: clamp(2.27rem, 2.01rem + 1.29vw, 2.93rem);
+  --step-4: clamp(2.72rem, 2.36rem + 1.83vw, 3.66rem);
+  --step-5: clamp(3.27rem, 2.75rem + 2.56vw, 4.58rem);
+}
+
+
+.btn_orange_header:hover {
+  animation: rubber-band 1s linear;
+}
+
+@keyframes rubber-band {
+  0% {
+    transform: scaleX(1);
+  }
+
+  40% {
+    transform: scaleX(1.12) scaleY(0.75);
+  }
+
+  55% {
+    transform: scaleX(0.85) scaleY(1);
+  }
+
+  65% {
+    transform: scaleX(1.09) scaleY(0.85);
+  }
+
+  75% {
+    transform: scaleX(0.9) scaleY(1);
+  }
+
+  90% {
+    transform: scaleX(1.05) scaleY(0.95);
+  }
+
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+
+}
+
+
+.btn_orange {
+  background: #fca345;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  transition: all 0.5s linear;
+  font-size: var(--step--5);
+  box-shadow: -0rem 0.2rem #7e4f1e;
+  display: block;
+}
+
+span>img {
+  width: 90%;
+
+}
+
+.text-white2 {
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(2px 2px rgb(14, 21, 27));
+}
+
+[ type="text"],
+select {
+  width: 15em;
+}
+
+@media screen and (max-width: 999px) {
+  .navbar {
+    width: 100% !important;
+  }
+}
+
+.form-check-input:checked {
+  background-color: #344257;
+  border-color: #2e3238;
+}
+
+body {
+  background-image: url(../steamgamescollection001999x0-1200x600.png);
+  background-size: cover;
+  height: 100%;
+
+}
+
+.fondo-login {
+  background-color: rgb(20, 22, 28);
+
+  padding: 2rem;
+  border-radius: 2rem;
+}

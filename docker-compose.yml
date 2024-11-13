@@ -1,0 +1,40 @@
+networks:
+  app_network:
+    driver: bridge
+    
+services:
+  app:
+    container_name: app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file:
+      - .env
+    depends_on:
+      - mariadb
+    ports:
+      - 8080:80
+    volumes:
+      - type: bind
+        source: .
+        target: /var/www/html
+      - type: bind
+        source: apache.conf
+        target: /etc/apache2/sites-available/000-default.conf
+    networks:
+      - app_network
+
+  mariadb:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: tu_puedes
+    volumes:
+      - type: bind
+        source: ./docker-entrypoint-initdb.d/
+        target: /docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+    networks:
+      - app_network

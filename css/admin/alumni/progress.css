@@ -1,0 +1,66 @@
+
+:root{
+    --color1:rgb(15, 123, 212);
+}
+.contenedor {
+  background-color: #fff;
+  height: 350px;
+  width: 250px;
+  position: relative;
+  border-radius: 5px;
+  margin: 4px auto;
+}
+.svg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+}
+.box_percentage {
+  height: 250px;
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 36%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tiempo {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color:var(--color1);
+}
+.progress2{
+fill: none;
+stroke-width: 15;
+stroke: rgb(233, 233, 233);
+
+}
+.progressTiempo {
+  fill: none;
+  stroke-width: 15;
+  stroke: #ff7d3f ;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  stroke-linecap: round;
+  stroke-dasharray: 630;
+  stroke-dashoffset: 630;
+  transition: .3s;
+}
+.title{
+    height: 100px;
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: .8em;
+    color:var(--color1);
+   font-weight: bold;
+
+}

@@ -1,0 +1,541 @@
+/*Sin comentario*/
+:root {
+    --color-gris: #606060;
+    --color-negro: #4b4b4b;
+    --color-azul: #1CB0F6;
+}
+
+main {
+    height: auto;
+    /*background-color: #ffeee6 ;
+    background-image: url(../../../img/fondo_jugador.png);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerResults {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(34, 34, 34, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    animation: bottom 2s linear 300ms alternate both;
+    transition: all 2s linear;
+    background: rgba(26, 28, 29, 0.6);
+}
+
+.containerResults>div>h2 {
+    background: #fc7c45;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.btnContinua {
+    cursor: pointer;
+    border: 0;
+    border-bottom-width: 0px;
+    border-bottom-style: none;
+    border-bottom-color: currentcolor;
+    border-bottom: #d9622f solid 3px !important;
+    background: #ff864c !important;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 1rem;
+    border-bottom: #d9713f solid 3px;
+    background: #ff864c;
+    padding: 0.5rem 0.9rem;
+    background: #ff864c;
+}
+
+.display {
+    display: none;
+    opacity: 0;
+}
+
+span a {
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 999;
+    color: rgb(47, 47, 47);
+}
+
+.fondo-letras {
+    background-image: url(../../../img/letras-efecto-blanco-negro.png);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.7;
+}
+
+#pot a {
+    color: blue;
+}
+
+.form__btn--detalle {
+    background: white;
+    border: 0rem;
+    color: white;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.5rem;
+    color: #fc7c45;
+    font-weight: bold;
+    text-align: center;
+    display: inline;
+}
+
+.rayita {
+    height: 2px;
+    background: rgb(239, 239, 239);
+    margin: 1.5rem 0rem;
+}
+
+.star {
+    background: var(--color-azul);
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: white;
+}
+
+.scroll {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #fc7c45;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.2s ease-out;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: #FFF;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 1s ease-out;
+    color: white;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.d-flex_rapido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer {
+    background-color: rgb(47, 47, 47);
+}
+
+.py-5 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+footer .d-flex {
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+}
+
+.container-guia {
+    padding: 0.5rem;
+    border: solid 2px rgb(60, 60, 60);
+    border-radius: 1rem;
+    color: rgb(60, 60, 60);
+    font-weight: bold;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.selection_week_month_orange {
+    background: #ff864c;
+}
+
+.selection_week {
+    color: #4b4b4b;
+    width: 100%;
+    height: fit-content;
+    max-height: 400px;
+    border-collapse: collapse;
+}
+
+.selection_week tbody {
+    width: 100%;
+}
+
+.selection_week tbody tr {
+    width: 100%;
+    border-bottom: 0.5px solid #ff864c;
+}
+
+.selection_week tbody tr td {
+    padding: 5px;
+}
+
+.d-flex_rapido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+i {
+    cursor: pointer;
+}
+
+/*botones*/
+.btn_orange {
+    background: #fca345;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.5s linear;
+    box-shadow: -0rem 0.2rem #7e4f1e;
+    display: block;
+
+}
+
+.btn_orange:hover {
+    transition: all linear 0.4s;
+    background: #ffa94f;
+    transform: translateY(-4px);
+    transition: all 250ms cubic-bezier(.3, .7, .4, 1.5);
+    box-shadow: -0rem 0.3rem #7e4f1e;
+    filter: brightness(110%);
+}
+
+#boton_sonido:hover {
+    transition: color linear 0.5s;
+    color: #ffe9c1;
+    cursor: pointer;
+}
+
+.btn_salir:hover {
+    transition: all linear 0.5s;
+    color: #d55252;
+}
+
+.boton_revisar {
+    background: #ff864c;
+    color: white;
+    padding: 0.5rem 5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    border-bottom: #d9713f solid 3px;
+}
+
+/*Fin | Botones*/
+
+/*Header*/
+.logo figure img {
+    max-width: 100px;
+}
+
+header {
+    height: 78.8px;
+    background: #ff7d3f;
+    width: 100%;
+
+}
+
+/*Fin | Header*/
+
+/*Progreso*/
+.progreso_tabla {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0px 1px 2px rgb(215 215 215);
+    border: 1px solid rgb(239, 239, 239);
+}
+
+.progreso_usuario-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* border: solid; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.title_progreso {
+    color: rgb(47, 47, 47);
+    font-weight: bold;
+}
+
+
+/*Fin | Progreso*/
+
+/*Mensaje de: Hemos actualizado la pagina*/
+.mensaje_actualizacion {
+    padding: 0.5rem;
+    background: rgb(0 0 0 / 6%);
+    border-radius: 0.5rem;
+    margin: 0.8rem;
+    position: relative;
+}
+
+.mensaje_actualizacion--button {
+    position: absolute;
+    top: -1rem;
+    background-color: rgb(47, 47, 47);
+    border-radius: 100%;
+    padding: 0.5rem 0.7rem;
+    color: white;
+    right: -1rem;
+    border: none;
+}
+
+/* Fin | Mensaje de; Hemos actualizado la pagina*/
+
+/*Lecciones*/
+.read {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 1px solid rgb(239, 239, 239);
+    box-shadow: 0px 1px 2px rgb(215 215 215);
+}
+
+.styles_cuaderno {
+    width: 8rem;
+    height: 6rem;
+    background-image: linear-gradient(45deg, #ff864c 30%,
+            #ff7736 30% 50%, #ff864c 50% 60%,
+            #ff7736 60% 65%, #ff864c 55% 100%);
+    border-radius: 0.5rem;
+    position: relative;
+    filter: drop-shadow(2px 4px 0px #c36437);
+}
+
+.styles_cuaderno>.black:first-child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(47, 47, 47);
+    width: 20px;
+    height: 15px;
+    top: 0.5rem;
+    left: -0.5rem;
+    border-radius: 0.5rem;
+}
+
+.styles_cuaderno_azul {
+    width: 8rem;
+    height: 6rem;
+    background-image: linear-gradient(45deg, #1CB0F6 30%, #16a0e1 30% 50%, #1CB0F6 50% 60%, #16a0e1 60% 65%, #1CB0F6 56% 100%);
+    border-radius: 0.5rem;
+    position: relative;
+    filter: drop-shadow(2px 4px 0px #1795d1);
+
+}
+
+.styles_cuaderno>.black_dos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(47, 47, 47);
+    width: 20px;
+    height: 15px;
+    top: 4.5rem;
+    left: -0.5rem;
+    border-radius: 0.5rem;
+}
+
+.container__styles_leccion {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    display: flex;
+    margin: 1.5rem 0rem;
+}
+
+.bi-pencil {
+    border: solid 0.1rem white;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.title_leccion {
+    text-align: center;
+}
+
+.carita {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.estado_juego+span {
+    color: rgb(47, 47, 47);
+    background: rgb(47, 47, 47, 0.1);
+    border-radius: 0.4rem;
+    padding: 0.2rem;
+}
+
+/*Fin | Lecciones*/
+
+/*Animacion*/
+.animation__icon-delete {
+    animation: icon-delete 2s ease 250ms 1 alternate both running;
+    ;
+}
+
+@keyframes icon-delete {
+
+    0% {
+        transform: perspective(0rem) rotateZ(4deg);
+    }
+
+    30% {
+        transform: perspective(0rem) rotateZ(360deg);
+        ;
+    }
+
+    50% {
+        transform: perspective(10rem) translateZ(0.0rem);
+    }
+
+    60%,
+    100% {
+        transform: perspective(10rem) translateZ(5rem);
+    }
+
+    70% {
+        transform: perspective(10rem) translateY(0.5rem);
+    }
+
+    90% {
+        transform: perspective(2rem) translateX(-0.9rem);
+    }
+}
+
+/* Fin | Animacion*/
+
+
+/*Ventanas modales*/
+.modal-header--comenzar {
+    background: #ff7d3f !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    color: white !important;
+    padding: 1rem !important;
+}
+
+.modal-header--not_acceso {
+    background: yellow !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    color: white !important;
+    padding: 1.5rem !important;
+}
+
+.modal-content {
+    border: none;
+}
+
+/*Fin | Ventanas modales*/
+
+/*Responsive*/
+@media screen and (max-width: 992px) {
+    .col-5 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1225px) {
+    .boton_revisar {
+        font-size: 13px;
+    }
+
+    .col-1 {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .container-fluid>div {
+        margin: 0rem;
+    }
+
+    .read {
+        background: none;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .container-fluid {
+        margin: 0.5rem 0rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-xl-3 {
+        display: none;
+    }
+}
+
+/*Fin | Responsive*/
+
+/*ventana modal*/
+.modal-header {
+    border: 0;
+    background: 1rem;
+    background: #ff864c;
+    color: white;
+    text-align: center;
+    display: block !important;
+}
+
+.modal-footer {
+    justify-content: space-evenly;
+}
+
+.modal-footer>a>button {
+    border: 0;
+    background: 1rem;
+    color: #ff864c;
+    font-weight: bold;
+}
+
+.modal-footer>button:first-child {
+    border: 0;
+    background: 1rem;
+    color: #ff864c;
+}
+
+
+.dropdown-item:active {
+    background-color: #ff7d3f !important;
+}
